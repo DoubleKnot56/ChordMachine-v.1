@@ -1,0 +1,2114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Chord Machine v.1</title>
+    <!-- Include Tone.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/tone"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--ROW-1-->
+<div class="configure-buttons">
+    <button id="toggleButton" class="toggl-acc">
+        Toggle Accidentals
+    </button>
+
+</div>
+
+<div class = "button-row">
+
+    <button class="chord-button" onclick="playChord('C')">
+        C
+    </button>
+    <button class="chord-button" onclick="playChord('Csus2')">
+        Csus2
+    </button>
+    <button class="chord-button" onclick="playChord('Csus4')">
+        Csus4
+    </button>
+    <button class="chord-button" onclick="playChord('Cm')">
+        Cm
+    </button>
+    <button class="chord-button" onclick="playChord('CM7')">
+        CM7
+    </button>
+    <button class="chord-button" onclick="playChord('Cm7')">
+        Cm7
+    </button>
+    <button class="chord-button" onclick="playChord('C7')">
+        C7
+    </button>
+    <button class="chord-button" onclick="playChord('C+')">
+        C+
+    </button>
+    <button class="chord-button" onclick="playChord('C°')">
+        C°
+    </button>
+    <button class="chord-button" onclick="playChord('Cm6')">
+        Cm6
+    </button>
+    <button class="chord-button" onclick="playChord('CM6')">
+        CM6
+    </button>
+    <button class="chord-button" onclick="playChord('C9')">
+        C9
+    </button>
+    <button class="chord-button" onclick="playChord('C11')">
+        C11
+    </button>
+    <button class="chord-button" onclick="playChord('C13')">
+        C13
+    </button>
+
+    
+</div>
+
+<!--ROW-2-->
+
+<div class="button-row">
+
+
+
+    <button id="Csharp" class="chord-button" onclick="playChord('C#')">
+        C#
+    </button>
+    <button id="Csharpsus2" class="chord-button" onclick="playChord('C#sus2')">
+        C#sus2
+    </button>
+    <button id="Csharpsus4" class="chord-button" onclick="playChord('C#sus4')">
+        C#sus4
+    </button>
+    <button id="Csharpminor" class="chord-button" onclick="playChord('C#m')">
+        C#m
+    </button>
+    <button id="Csharpmajor7" class="chord-button" onclick="playChord('C#M7')">
+        C#M7
+    </button>
+    <button id="Csharpminor7" class="chord-button" onclick="playChord('C#m7')">
+        C#m7
+    </button>
+    <button id="Csharp7" class="chord-button" onclick="playChord('C#7')">
+        C#7
+    </button>
+    <button id="Csharpaug" class="chord-button" onclick="playChord('C#+')">
+        C#+
+    </button>
+    <button id="Csharpdim" class="chord-button" onclick="playChord('C#°')">
+        C#°
+    </button>
+    <button id="Csharpminor6" class="chord-button" onclick="playChord('C#m6')">
+        C#m6
+    </button>
+    <button id="Csharpmajor6" class="chord-button" onclick="playChord('C#M6')">
+        C#M6
+    </button>
+    <button id="Csharp9" class="chord-button" onclick="playChord('C#9')">
+        C#9
+    </button>
+    <button id="Csharp11" class="chord-button" onclick="playChord('C#11')">
+        C#11
+    </button>
+    <button id="Csharp13" class="chord-button" onclick="playChord('C#13')">
+        C#13
+    </button>
+</div>
+
+<!--ROW-3-->
+
+<div class="button-row">
+
+    <button class="chord-button" onclick="playChord('D')">
+        
+        D
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Dsus2')">
+        
+        Dsus2
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Dsus4')">
+        
+        Dsus4
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Dm')">
+        
+        Dm
+    
+    </button>
+    <button class="chord-button" onclick="playChord('DM7')">
+        
+        DM7
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Dm7')">
+        
+        Dm7
+    
+    </button>
+    <button class="chord-button" onclick="playChord('D7')">
+        
+        D7
+    
+    </button>
+    <button class="chord-button" onclick="playChord('D+')">
+        
+        D+
+    
+    </button>
+    <button class="chord-button" onclick="playChord('D°')">
+        
+        D°
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Dm6')">
+        
+        Dm6
+    
+    </button>
+    <button class="chord-button" onclick="playChord('DM6')">
+        
+        DM6
+    
+    </button>
+    <button class="chord-button" onclick="playChord('D9')">
+        
+        D9
+    
+    </button>
+    <button class="chord-button" onclick="playChord('D11')">
+        
+        D11
+    
+    </button>
+    <button class="chord-button" onclick="playChord('D13')">
+        
+        D13
+    
+    </button>
+
+</div>
+
+<!--ROW-4-->
+
+<div class="button-row">
+
+    <button id="Dsharp" class="chord-button" onclick="playChord('D#')">
+        
+        D#
+    
+    </button>
+    <button id="Dsharpsus2" class="chord-button" onclick="playChord('D#sus2')">
+        
+        D#sus2
+    
+    </button>
+    <button id="Dsharpsus4" class="chord-button" onclick="playChord('D#sus4')">
+        
+        D#sus4
+    
+    </button>
+    <button id="Dsharpminor" class="chord-button" onclick="playChord('D#m')">
+        
+        D#m
+    
+    </button>
+    <button id="Dsharpmajor7" class="chord-button" onclick="playChord('D#M7')">
+        
+        D#M7
+    
+    </button>
+    <button id="Dsharpminor7" class="chord-button" onclick="playChord('D#m7')">
+        
+        D#m7
+    
+    </button>
+    <button id="Dsharp7" class="chord-button" onclick="playChord('D#7')">
+        
+        D#7
+    
+    </button>
+    <button id="Dsharpaug" class="chord-button" onclick="playChord('D#+')">
+        
+        D#+
+    
+    </button>
+    <button id="Dsharpdim" class="chord-button" onclick="playChord('D#°')">
+        
+        D#°
+    
+    </button>
+    <button id="Dsharpminor6" class="chord-button" onclick="playChord('D#m6')">
+        
+        D#m6
+    
+    </button>
+    <button id="Dsharpmajor6" class="chord-button" onclick="playChord('D#M6')">
+        
+        D#M6
+    
+    </button>
+    <button id="Dsharp9" class="chord-button" onclick="playChord('D#9')">
+        
+        D#9
+    
+    </button>
+    <button id="Dsharp11" class="chord-button" onclick="playChord('D#11')">
+        
+        D#11
+    
+    </button>
+    <button id="Dsharp13" class="chord-button" onclick="playChord('D#13')">
+        
+        D#13
+    
+    </button>
+
+    
+    
+</div>
+
+<!--ROW-5-->
+
+<div class="button-row">
+
+    <button class="chord-button" onclick="playChord('E')">
+        
+        E
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Esus2')">
+        
+        Esus2
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Esus4')">
+        
+        Esus4
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Em')">
+        
+        Em
+    
+    </button>
+    <button class="chord-button" onclick="playChord('EM7')">
+        
+        EM7
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Em7')">
+        
+        Em7
+    
+    </button>
+    <button class="chord-button" onclick="playChord('E7')">
+        
+        E7
+    
+    </button>
+    <button class="chord-button" onclick="playChord('E+')">
+        
+        E+
+    
+    </button>
+    <button class="chord-button" onclick="playChord('E°')">
+        
+        E°
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Em6')">
+        
+        Em6
+    
+    </button>
+    <button class="chord-button" onclick="playChord('EM6')">
+        
+        EM6
+    
+    </button>
+    <button class="chord-button" onclick="playChord('E9')">
+        
+        E9
+    
+    </button>
+    <button class="chord-button" onclick="playChord('E11')">
+        
+        E11
+    
+    </button>
+    <button class="chord-button" onclick="playChord('E13')">
+        
+        E13
+    
+    </button>
+
+</div>
+
+<!--ROW-6-->
+
+<div class="button-row">
+
+    <button class="chord-button" onclick="playChord('F')">
+        
+        F
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Fsus2')">
+        
+        Fsus2
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Fsus4')">
+        
+        Fsus4
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Fm')">
+        
+        Fm
+    
+    </button>
+    <button class="chord-button" onclick="playChord('FM7')">
+        
+        FM7
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Fm7')">
+        
+        Fm7
+    
+    </button>
+    <button class="chord-button" onclick="playChord('F7')">
+        
+        F7
+    
+    </button>
+    <button class="chord-button" onclick="playChord('F+')">
+        
+        F+
+    
+    </button>
+    <button class="chord-button" onclick="playChord('F°')">
+        
+        F°
+    
+    </button>
+    <button class="chord-button" onclick="playChord('Fm6')">
+        
+        Fm6
+    
+    </button>
+    <button class="chord-button" onclick="playChord('FM6')">
+        
+        FM6
+    
+    </button>
+    <button class="chord-button" onclick="playChord('F9')">
+        
+        F9
+    
+    </button>
+    <button class="chord-button" onclick="playChord('F11')">
+        
+        F11
+    
+    </button>
+    <button class="chord-button" onclick="playChord('F13')">
+        
+        F13
+    
+    </button>
+
+
+</div>
+
+<!--ROW-7-->
+
+<div class="button-row">
+
+    <button id="Fsharp" class="chord-button" onclick="playChord('F#')">
+        F#
+    </button>
+    <button id="Fsharpsus2" class="chord-button" onclick="playChord('F#sus2')">
+        F#sus2
+    </button>
+    <button id="Fsharpsus4" class="chord-button" onclick="playChord('F#sus4')">
+        F#sus4
+    </button>
+    <button id="Fsharpminor" class="chord-button" onclick="playChord('F#m')">
+        F#m
+    </button>
+    <button id="Fsharpmajor7" class="chord-button" onclick="playChord('F#M7')">
+        F#M7
+    </button>
+    <button id="Fsharpminor7" class="chord-button" onclick="playChord('F#m7')">
+        F#m7
+    </button>
+    <button id="Fsharp7" class="chord-button" onclick="playChord('F#7')">
+        F#7
+    </button>
+    <button id="Fsharpaug" class="chord-button" onclick="playChord('F#+')">
+        F#+
+    </button>
+    <button id="Fsharpdim" class="chord-button" onclick="playChord('F#°')">
+        F#°
+    </button>
+    <button id="Fsharpminor6" class="chord-button" onclick="playChord('F#m6')">
+        F#m6
+    </button>
+    <button id="Fsharpmajor6" class="chord-button" onclick="playChord('F#M6')">
+        F#M6
+    </button>
+    <button id="Fsharp9" class="chord-button" onclick="playChord('F#9')">
+        F#9
+    </button>
+    <button id="Fsharp11" class="chord-button" onclick="playChord('F#11')">
+        F#11
+    </button>
+    <button id="Fsharp13" class="chord-button" onclick="playChord('F#13')">
+        F#13
+    </button>
+
+
+</div>
+
+<!--ROW-8-->
+
+<div class="button-row">
+
+    <button class="chord-button" onclick="playChord('G')">
+        G
+    </button>
+    <button class="chord-button" onclick="playChord('Gsus2')">
+        Gsus2
+    </button>
+    <button class="chord-button" onclick="playChord('Gsus4')">
+        Gsus4
+    </button>
+    <button class="chord-button" onclick="playChord('Gm')">
+        Gm
+    </button>
+    <button class="chord-button" onclick="playChord('GM7')">
+        GM7
+    </button>
+    <button class="chord-button" onclick="playChord('Gm7')">
+        Gm7
+    </button>
+    <button class="chord-button" onclick="playChord('G7')">
+        G7
+    </button>
+    <button class="chord-button" onclick="playChord('G+')">
+        G+
+    </button>
+    <button class="chord-button" onclick="playChord('G°')">
+        G°
+    </button>
+    <button class="chord-button" onclick="playChord('Gm6')">
+        Gm6
+    </button>
+    <button class="chord-button" onclick="playChord('GM6')">
+        GM6
+    </button>
+    <button class="chord-button" onclick="playChord('G9')">
+        G9
+    </button>
+    <button class="chord-button" onclick="playChord('G11')">
+        G11
+    </button>
+    <button class="chord-button" onclick="playChord('G13')">
+        G13
+    </button>
+
+</div>
+
+<!--ROW-9-->
+
+<div class="button-row">
+
+    <button id="Gsharp" class="chord-button" onclick="playChord('G#')">
+        G#
+    </button>
+    <button id="Gsharpsus2" class="chord-button" onclick="playChord('G#sus2')">
+        G#sus2
+    </button>
+    <button id="Gsharpsus4" class="chord-button" onclick="playChord('G#sus4')">
+        G#sus4
+    </button>
+    <button id="Gsharpminor" class="chord-button" onclick="playChord('G#m')">
+        G#m
+    </button>
+    <button id="Gsharpmajor7" class="chord-button" onclick="playChord('G#M7')">
+        G#M7
+    </button>
+    <button id="Gsharpminor7" class="chord-button" onclick="playChord('G#m7')">
+        G#m7
+    </button>
+    <button id="Gsharp7" class="chord-button" onclick="playChord('G#7')">
+        G#7
+    </button>
+    <button id="Gsharpaug" class="chord-button" onclick="playChord('G#+')">
+        G#+
+    </button>
+    <button id="Gsharpdim" class="chord-button" onclick="playChord('G#°')">
+        G#°
+    </button>
+    <button id="Gsharpminor6" class="chord-button" onclick="playChord('G#m6')">
+        G#m6
+    </button>
+    <button id="Gsharpmajor6" class="chord-button" onclick="playChord('G#M6')">
+        G#M6
+    </button>
+    <button id="Gsharp9" class="chord-button" onclick="playChord('G#9')">
+        G#9
+    </button>
+    <button id="Gsharp11" class="chord-button" onclick="playChord('G#11')">
+        G#11
+    </button>
+    <button id="Gsharp13" class="chord-button" onclick="playChord('G#13')">
+        G#13
+    </button>
+ 
+</div>
+
+<!--ROW-10-->
+
+<div class="button-row">
+
+    <button class="chord-button" onclick="playChord('A')">
+        A
+    </button>
+    <button class="chord-button" onclick="playChord('Asus2')">
+        Asus2
+    </button>
+    <button class="chord-button" onclick="playChord('Asus4')">
+        Asus4
+    </button>
+    <button class="chord-button" onclick="playChord('Am')">
+        Am
+    </button>
+    <button class="chord-button" onclick="playChord('AM7')">
+        AM7
+    </button>
+    <button class="chord-button" onclick="playChord('Am7')">
+        Am7
+    </button>
+    <button class="chord-button" onclick="playChord('A7')">
+        A7
+    </button>
+    <button class="chord-button" onclick="playChord('A+')">
+        A+
+    </button>
+    <button class="chord-button" onclick="playChord('A°')">
+        A°
+    </button>
+    <button class="chord-button" onclick="playChord('Am6')">
+        Am6
+    </button>
+    <button class="chord-button" onclick="playChord('AM6')">
+        AM6
+    </button>
+    <button class="chord-button" onclick="playChord('A9')">
+        A9
+    </button>
+    <button class="chord-button" onclick="playChord('A11')">
+        A11
+    </button>
+    <button class="chord-button" onclick="playChord('A13')">
+        A13
+    </button>
+
+</div>
+
+<!--ROW-11-->
+
+<div class="button-row">
+
+    <button id="Asharp" class="chord-button" onclick="playChord('A#')">
+        A#
+    </button>
+    <button id="Asharpsus2" class="chord-button" onclick="playChord('A#sus2')">
+        A#sus2
+    </button>
+    <button id="Asharpsus4" class="chord-button" onclick="playChord('A#sus4')">
+        A#sus4
+    </button>
+    <button id="Asharpminor" class="chord-button" onclick="playChord('A#m')">
+        A#m
+    </button>
+    <button id="Asharpmajor7" class="chord-button" onclick="playChord('A#M7')">
+        A#M7
+    </button>
+    <button id="Asharpminor7" class="chord-button" onclick="playChord('A#m7')">
+        A#m7
+    </button>
+    <button id="Asharp7" class="chord-button" onclick="playChord('A#7')">
+        A#7
+    </button>
+    <button id="Asharpaug" class="chord-button" onclick="playChord('A#+')">
+        A#+
+    </button>
+    <button id="Asharpdim" class="chord-button" onclick="playChord('A#°')">
+        A#°
+    </button>
+    <button id="Asharpminor6" class="chord-button" onclick="playChord('A#m6')">
+        A#m6
+    </button>
+    <button id="Asharpmajor6" class="chord-button" onclick="playChord('A#M6')">
+        A#M6
+    </button>
+    <button id="Asharp9" class="chord-button" onclick="playChord('A#9')">
+        A#9
+    </button>
+    <button id="Asharp11" class="chord-button" onclick="playChord('A#11')">
+        A#11
+    </button>
+    <button id="Asharp13" class="chord-button" onclick="playChord('A#13')">
+        A#13
+    </button>
+
+</div>
+
+<!--ROW-12-->
+
+<div class="button-row">
+    
+    <button class="chord-button" onclick="playChord('B')">
+        B
+    </button>
+    <button class="chord-button" onclick="playChord('Bsus2')">
+        Bsus2
+    </button>
+    <button class="chord-button" onclick="playChord('Bsus4')">
+        Bsus4
+    </button>
+    <button class="chord-button" onclick="playChord('Bm')">
+        Bm
+    </button>
+    <button class="chord-button" onclick="playChord('BM7')">
+        BM7
+    </button>
+    <button class="chord-button" onclick="playChord('Bm7')">
+        Bm7
+    </button>
+    <button class="chord-button" onclick="playChord('B7')">
+        B7
+    </button>
+    <button class="chord-button" onclick="playChord('B+')">
+        B+
+    </button>
+    <button class="chord-button" onclick="playChord('B°')">
+        B°
+    </button>
+    <button class="chord-button" onclick="playChord('Bm6')">
+        Bm6
+    </button>
+    <button class="chord-button" onclick="playChord('BM6')">
+        BM6
+    </button>
+    <button class="chord-button" onclick="playChord('B9')">
+        B9
+    </button>
+    <button class="chord-button" onclick="playChord('B11')">
+        B11
+    </button>
+    <button class="chord-button" onclick="playChord('B13')">
+        B13
+    </button>
+    
+
+</div>
+
+    
+
+
+    <script>
+    // Create a new Tone.js synth
+    const synth = new Tone.PolySynth().toDestination();
+
+    synth.set({
+        envelope:{
+            attack: 0.6,
+            decay: 2,
+            sustain: 0.6,
+            release: 4
+        },
+
+        filter:{
+            type: 'lowpass',
+            frequency: 1000,
+            rolloff: -12
+        },
+        
+        oscillator:{
+            type: 'sawtooth',
+            volume: -6,
+            frequency: 50
+
+        }
+    });
+
+    
+// Track the current chord being played
+let currentChord = null;
+
+// Function to play or stop a chord
+function playChord(chord) {
+    if (currentChord === chord) {
+        // Chord is already playing, stop it
+        synth.releaseAll();
+        currentChord = null;
+    } else {
+        // Stop the current chord if any
+        if (currentChord !== null) {
+            synth.releaseAll();
+        }
+
+        //MAJOR-CHORDS
+        switch (chord) {
+            case 'C':
+                synth.triggerAttackRelease(["C4", "E4", "G4"], );
+                break;
+            case 'C#':
+                synth.triggerAttackRelease(["C#4", "F4", "G#4"], );
+                break;
+            case 'D':
+                synth.triggerAttackRelease(["D4", "F#4", "A4"], );
+                break;
+            case 'D#':
+                synth.triggerAttackRelease(["D#4", "G4", "A#4"], );
+                break;
+
+            case 'E':
+                synth.triggerAttackRelease(["E4", "G#4", "B4"], );
+                break;
+            case 'F':
+                synth.triggerAttackRelease(["F4", "A4", "C5"], );
+                break;
+            case 'F#':
+                synth.triggerAttackRelease(["F#4", "A#4", "C#5"], );
+                break;
+            case 'G':
+                synth.triggerAttackRelease(["G4", "B4", "D5"], );
+                break;
+
+
+            case 'G#':
+                synth.triggerAttackRelease(["G#4", "C5", "D#5"], );
+                break;
+            case 'A':
+                synth.triggerAttackRelease(["A4", "C#5", "E5"], );
+                break;
+            case 'A#':
+                synth.triggerAttackRelease(["A#4", "D5", "F5"], );
+                break;
+            case 'B':
+                synth.triggerAttackRelease(["B4", "D#5", "F#5"], );
+                break;
+
+            //SUS-2-CHORDS
+
+            case 'Csus2':
+                synth.triggerAttackRelease(["C4", "D4", "G4"], );
+                break;
+            case 'C#sus2':
+                synth.triggerAttackRelease(["C#4", "D#4", "G#4"], );
+                break;
+            case 'Dsus2':
+                synth.triggerAttackRelease(["D4", "E4", "A4"], );
+                break;
+            case 'D#sus2':
+                synth.triggerAttackRelease(["D#4", "F4", "A#4"], );
+                break;
+
+            case 'Esus2':
+                synth.triggerAttackRelease(["E4", "F#4", "B4"], );
+                break;
+            case 'Fsus2':
+                synth.triggerAttackRelease(["F4", "G4", "C5"], );
+                break;
+            case 'F#sus2':
+                synth.triggerAttackRelease(["F#4", "G#4", "C#5"], );
+                break;
+            case 'Gsus2':
+                synth.triggerAttackRelease(["G4", "A4", "D5"], );
+                break;
+
+
+            case 'G#sus2':
+                synth.triggerAttackRelease(["G#4", "A#4", "D#5"], );
+                break;
+            case 'Asus2':
+                synth.triggerAttackRelease(["A4", "B4", "E5"], );
+                break;
+            case 'A#sus2':
+                synth.triggerAttackRelease(["A#4", "C5", "F5"], );
+                break;
+            case 'Bsus2':
+                synth.triggerAttackRelease(["B4", "C#5", "F#5"], );
+                break;
+
+            //SUS-4-CHORDS
+
+            case 'Csus4':
+                synth.triggerAttackRelease(["C4", "F4", "G4"], );
+                break;
+            case 'C#sus4':
+                synth.triggerAttackRelease(["C#4", "F#4", "G#4"], );
+                break;
+            case 'Dsus4':
+                synth.triggerAttackRelease(["D4", "G4", "A4"], );
+                break;
+            case 'D#sus4':
+                synth.triggerAttackRelease(["D#4", "G#4", "A#4"], );
+                break;
+
+            case 'Esus4':
+                synth.triggerAttackRelease(["E4", "A4", "B4"], );
+                break;
+            case 'Fsus4':
+                synth.triggerAttackRelease(["F4", "A#4", "C5"], );
+                break;
+            case 'F#sus4':
+                synth.triggerAttackRelease(["F#4", "B4", "C#5"], );
+                break;
+            case 'Gsus4':
+                synth.triggerAttackRelease(["G4", "C5", "D5"], );
+                break;
+
+
+            case 'G#sus4':
+                synth.triggerAttackRelease(["G#4", "C#5", "D#5"], );
+                break;
+            case 'Asus4':
+                synth.triggerAttackRelease(["A4", "D5", "E5"], );
+                break;
+            case 'A#sus4':
+                synth.triggerAttackRelease(["A#4", "D#5", "F5"], );
+                break;
+            case 'Bsus4':
+                synth.triggerAttackRelease(["B4", "E5", "F#5"], );
+                break;
+
+            //MINOR-CHORDS
+
+            case 'Cm':
+                synth.triggerAttackRelease(["C4", "D#4", "G4"], );
+                break;
+            case 'C#m':
+                synth.triggerAttackRelease(["C#4", "E4", "G#4"], );
+                break;
+            case 'Dm':
+                synth.triggerAttackRelease(["D4", "F4", "A4"], );
+                break;
+            case 'D#m':
+                synth.triggerAttackRelease(["D#4", "F#4", "A#4"], );
+                break;
+
+
+            case 'Em':
+                synth.triggerAttackRelease(["E4", "G4", "B4"], );
+                break;
+            case 'Fm':
+                synth.triggerAttackRelease(["F4", "G#4", "C5"], );
+                break;
+            case 'F#m':
+                synth.triggerAttackRelease(["F#4", "A4", "C#5"], );
+                break;
+            case 'Gm':
+                synth.triggerAttackRelease(["G4", "A#4", "D5"], );
+                break;
+
+
+            case 'G#m':
+                synth.triggerAttackRelease(["G#4", "B4", "D#5"], );
+                break;
+            case 'Am':
+                synth.triggerAttackRelease(["A4", "C5", "E5"], );
+                break;
+            case 'A#m':
+                synth.triggerAttackRelease(["A#4", "C#5", "F5"], );
+                break;
+            case 'Bm':
+                synth.triggerAttackRelease(["B4", "D5", "F#5"], );
+                break;
+            
+            //MAJOR-7-CHORDS
+
+            case 'CM7':
+                synth.triggerAttackRelease(["C4", "E4", "G4", "B4"],  );
+                break;
+            case 'C#M7':
+                synth.triggerAttackRelease(["C#4", "F4", "G#4", "C5"], );
+                break;
+            case 'DM7':
+                synth.triggerAttackRelease(["D4", "F#4", "A4", "C#5"], );
+                break;
+            case 'D#M7':
+                synth.triggerAttackRelease(["D#4", "G4", "A#4", "D5"], );
+                break;
+
+
+            case 'EM7':
+                synth.triggerAttackRelease(["E4", "G#4", "B4", "D#5"], );
+                break;
+            case 'FM7':
+                synth.triggerAttackRelease(["F4", "A4", "C5", "E5"], );
+                break;
+            case 'F#M7':
+                synth.triggerAttackRelease(["F#4", "A#4", "C#5", "F5"], );
+                break;
+            case 'GM7':
+                synth.triggerAttackRelease(["G4", "B4", "D5", "F#5"], );
+                break;
+
+
+            case 'G#M7':
+                synth.triggerAttackRelease(["G#4", "C5", "D#5", "G5"], );
+                break;
+            case 'AM7':
+                synth.triggerAttackRelease(["A4", "C#5", "E5", "G#5"], );
+                break;
+            case 'A#M7':
+                synth.triggerAttackRelease(["A#4", "D5", "F5", "A5"], );
+                break;
+            case 'BM7':
+                synth.triggerAttackRelease(["B4", "D#5", "F#5", "A#5"], );
+                break;
+
+
+            //MINOR-7-CHORDS
+
+            case 'Cm7':
+                synth.triggerAttackRelease(["C4", "D#4", "G4", "A#4"], );
+                break;
+            case 'C#m7':
+                synth.triggerAttackRelease(["C#4", "E4", "G#4", "B4"], );
+                break;
+            case 'Dm7':
+                synth.triggerAttackRelease(["D4", "F4", "A4", "C5"], );
+                break;
+            case 'D#m7':
+                synth.triggerAttackRelease(["D#4", "F#4", "A#4", "C#5"], );
+                break;
+
+
+            case 'Em7':
+                synth.triggerAttackRelease(["E4", "G4", "B4", "D5"], );
+                break;
+            case 'Fm7':
+                synth.triggerAttackRelease(["F4", "G#4", "C5", "D#5"], );
+                break;
+            case 'F#m7':
+                synth.triggerAttackRelease(["F#4", "A4", "C#5", "E5"], );
+                break;
+            case 'Gm7':
+                synth.triggerAttackRelease(["G4", "A#4", "D5", "F5"], );
+                break;
+
+
+            case 'G#m7':
+                synth.triggerAttackRelease(["G#4", "B4", "D#5", "F#5"], );
+                break;
+            case 'Am7':
+                synth.triggerAttackRelease(["A4", "C5", "E5", "G5"], );
+                break;
+            case 'A#m7':
+                synth.triggerAttackRelease(["A#4", "C#5", "F5", "G#5"], );
+                break;
+            case 'Bm7':
+                synth.triggerAttackRelease(["B4", "D5", "F#5", "A5"], );
+                break;
+
+
+            //DOMINANT-7-CHORDS
+
+            case 'C7':
+                synth.triggerAttackRelease(["C4", "E4", "G4", "A#4"],  );
+                break;
+            case 'C#7':
+                synth.triggerAttackRelease(["C#4", "F4", "G#4", "B4"],  );
+                break;
+            case 'D7':
+                synth.triggerAttackRelease(["D4", "F#4", "A4", "C5"],  );
+                break;
+            case 'D#7':
+                synth.triggerAttackRelease(["D#4", "G4", "A#4", "C#5"],  );
+                break;
+
+            case 'E7':
+                synth.triggerAttackRelease(["E4", "G#4", "B4", "D5"],  );
+                break;
+            case 'F7':
+                synth.triggerAttackRelease(["F4", "A4", "C5", "D#5"],  );
+                break;
+            case 'F#7':
+                synth.triggerAttackRelease(["F#4", "A#4", "C#5", "E5"],  );
+                break;
+            case 'G7':
+                synth.triggerAttackRelease(["G4", "B4", "D5", "F5"],  );
+                break;
+
+            case 'G#7':
+                synth.triggerAttackRelease(["G#4", "C5", "D#5", "F#5"],  );
+                break;
+            case 'A7':
+                synth.triggerAttackRelease(["A4", "C#5", "E5", "G5"],  );
+                break;
+            case 'A#7':
+                synth.triggerAttackRelease(["A#4", "D5", "F5", "G#5"],  );
+                break;
+            case 'B7':
+                synth.triggerAttackRelease(["B4", "D#5", "F#5", "A5"],  );
+                break;
+        
+
+        //AUGMENTED-CHORDS
+        
+            case 'C+':
+                synth.triggerAttackRelease(["C4", "E4", "G#4"], );
+                break;
+            case 'C#+':
+                synth.triggerAttackRelease(["C#4", "F4", "A4"], );
+                break;
+            case 'D+':
+                synth.triggerAttackRelease(["D4", "F#4", "A#4"], );
+                break;
+            case 'D#+':
+                synth.triggerAttackRelease(["D#4", "G4", "B4"], );
+                break;
+
+            case 'E+':
+                synth.triggerAttackRelease(["E4", "G#4", "C5"], );
+                break;
+            case 'F+':
+                synth.triggerAttackRelease(["F4", "A4", "C#5"], );
+                break;
+            case 'F#+':
+                synth.triggerAttackRelease(["F#4", "A#4", "D5"], );
+                break;
+            case 'G+':
+                synth.triggerAttackRelease(["G4", "B4", "D#5"], );
+                break;
+
+
+            case 'G#+':
+                synth.triggerAttackRelease(["G#4", "C5", "E5"], );
+                break;
+            case 'A+':
+                synth.triggerAttackRelease(["A4", "C#5", "F5"], );
+                break;
+            case 'A#+':
+                synth.triggerAttackRelease(["A#4", "D5", "F#5"], );
+                break;
+            case 'B+':
+                synth.triggerAttackRelease(["B4", "D#5", "G5"], );
+                break;
+
+            //DIMINISHED-CHORDS
+
+            case 'C°':
+                synth.triggerAttackRelease(["C4", "D#4", "F#4"], );
+                break;
+            case 'C#°':
+                synth.triggerAttackRelease(["C#4", "E4", "G4"], );
+                break;
+            case 'D°':
+                synth.triggerAttackRelease(["D4", "F4", "G#4"], );
+                break;
+            case 'D#°':
+                synth.triggerAttackRelease(["D#4", "F#4", "A4"], );
+                break;
+
+
+            case 'E°':
+                synth.triggerAttackRelease(["E4", "G4", "A#4"], );
+                break;
+            case 'F°':
+                synth.triggerAttackRelease(["F4", "G#4", "B4"], );
+                break;
+            case 'F#°':
+                synth.triggerAttackRelease(["F#4", "A4", "C5"], );
+                break;
+            case 'G°':
+                synth.triggerAttackRelease(["G4", "A#4", "C#5"], );
+                break;
+
+
+            case 'G#°':
+                synth.triggerAttackRelease(["G#4", "B4", "D5"], );
+                break;
+            case 'A°':
+                synth.triggerAttackRelease(["A4", "C5", "D#5"], );
+                break;
+            case 'A#°':
+                synth.triggerAttackRelease(["A#4", "C#5", "E5"], );
+                break;
+            case 'B°':
+                synth.triggerAttackRelease(["B4", "D5", "F5"], );
+                break;
+            
+            //MINOR-6-CHORDS
+
+            case 'Cm6':
+                synth.triggerAttackRelease(["C4", "D#4", "G4", "A4"], );
+                break;
+            case 'C#m6':
+                synth.triggerAttackRelease(["C#4", "E4", "G#4", "A#4"], );
+                break;
+            case 'Dm6':
+                synth.triggerAttackRelease(["D4", "F4", "A4", "B4"], );
+                break;
+            case 'D#m6':
+                synth.triggerAttackRelease(["D#4", "F#4", "A#4", "C5"], );
+                break;
+
+
+            case 'Em6':
+                synth.triggerAttackRelease(["E4", "G4", "B4", "C#5"], );
+                break;
+            case 'Fm6':
+                synth.triggerAttackRelease(["F4", "G#4", "C5", "D5"], );
+                break;
+            case 'F#m6':
+                synth.triggerAttackRelease(["F#4", "A4", "C#5", "D#5"], );
+                break;
+            case 'Gm6':
+                synth.triggerAttackRelease(["G4", "A#4", "D5", "E5"], );
+                break;
+
+
+            case 'G#m6':
+                synth.triggerAttackRelease(["G#4", "B4", "D#5", "F5"], );
+                break;
+            case 'Am6':
+                synth.triggerAttackRelease(["A4", "C5", "E5", "F#5"], );
+                break;
+            case 'A#m6':
+                synth.triggerAttackRelease(["A#4", "C#5", "F5", "G5"], );
+                break;
+            case 'Bm6':
+                synth.triggerAttackRelease(["B4", "D5", "F#5", "G#5"], );
+                break;
+
+            //MAJOR-6-CHORDS
+
+            case 'CM6':
+                synth.triggerAttackRelease(["C4", "E4", "G4", "A4"],  );
+                break;
+            case 'C#M6':
+                synth.triggerAttackRelease(["C#4", "F4", "G#4", "A#4"], );
+                break;
+            case 'DM6':
+                synth.triggerAttackRelease(["D4", "F#4", "A4", "B4"], );
+                break;
+            case 'D#M6':
+                synth.triggerAttackRelease(["D#4", "G4", "A#4", "C5"], );
+                break;
+
+
+            case 'EM6':
+                synth.triggerAttackRelease(["E4", "G#4", "B4", "C#5"], );
+                break;
+            case 'FM6':
+                synth.triggerAttackRelease(["F4", "A4", "C5", "D5"], );
+                break;
+            case 'F#M6':
+                synth.triggerAttackRelease(["F#4", "A#4", "C#5", "D#5"], );
+                break;
+            case 'GM6':
+                synth.triggerAttackRelease(["G4", "B4", "D5", "E5"], );
+                break;
+
+
+            case 'G#M6':
+                synth.triggerAttackRelease(["G#4", "C5", "D#5", "F5"], );
+                break;
+            case 'AM6':
+                synth.triggerAttackRelease(["A4", "C#5", "E5", "F#5"], );
+                break;
+            case 'A#M6':
+                synth.triggerAttackRelease(["A#4", "D5", "F5", "G5"], );
+                break;
+            case 'BM6':
+                synth.triggerAttackRelease(["B4", "D#5", "F#5", "G#5"], );
+                break;
+
+            
+             //9-CHORDS
+
+             case 'C9':
+                synth.triggerAttackRelease(["C4", "E4", "G4", "A#4", "D5"],  );
+                break;
+            case 'C#9':
+                synth.triggerAttackRelease(["C#4", "F4", "G#4", "B4", "D#5"],  );
+                break;
+            case 'D9':
+                synth.triggerAttackRelease(["D4", "F#4", "A4", "C5", "E5"],  );
+                break;
+            case 'D#9':
+                synth.triggerAttackRelease(["D#4", "G4", "A#4", "C#5", "F5"],  );
+                break;
+
+            case 'E9':
+                synth.triggerAttackRelease(["E4", "G#4", "B4", "D5", "F#5"],  );
+                break;
+            case 'F9':
+                synth.triggerAttackRelease(["F4", "A4", "C5", "D#5", "G5"],  );
+                break;
+            case 'F#9':
+                synth.triggerAttackRelease(["F#4", "A#4", "C#5", "E5", "G#5"],  );
+                break;
+            case 'G9':
+                synth.triggerAttackRelease(["G4", "B4", "D5", "F5", "A5"],  );
+                break;
+
+            case 'G#9':
+                synth.triggerAttackRelease(["G#4", "C5", "D#5", "F#5", "A#5"],  );
+                break;
+            case 'A9':
+                synth.triggerAttackRelease(["A4", "C#5", "E5", "G5", "B5"],  );
+                break;
+            case 'A#9':
+                synth.triggerAttackRelease(["A#4", "D5", "F5", "G#5", "C6"],  );
+                break;
+            case 'B9':
+                synth.triggerAttackRelease(["B4", "D#5", "F#5", "A5", "C#6"],  );
+                break;
+
+            //11-CHORDS
+
+            case 'C11':
+                synth.triggerAttackRelease(["C4", "E4", "G4", "A#4", "D5", "F5"],  );
+                break;
+            case 'C#11':
+                synth.triggerAttackRelease(["C#4", "F4", "G#4", "B4", "D#5", "F#5"],  );
+                break;
+            case 'D11':
+                synth.triggerAttackRelease(["D4", "F#4", "A4", "C5", "E5", "G5"],  );
+                break;
+            case 'D#11':
+                synth.triggerAttackRelease(["D#4", "G4", "A#4", "C#5", "F5", "G#5"],  );
+                break;
+
+            case 'E11':
+                synth.triggerAttackRelease(["E4", "G#4", "B4", "D5", "F#5", "A5"],  );
+                break;
+            case 'F11':
+                synth.triggerAttackRelease(["F4", "A4", "C5", "D#5", "G5", "A#5"],  );
+                break;
+            case 'F#11':
+                synth.triggerAttackRelease(["F#4", "A#4", "C#5", "E5", "G#5", "B5"],  );
+                break;
+            case 'G11':
+                synth.triggerAttackRelease(["G4", "B4", "D5", "F5", "A5", "C6"],  );
+                break;
+
+            case 'G#11':
+                synth.triggerAttackRelease(["G#4", "C5", "D#5", "F#5", "A#5", "C#6"],  );
+                break;
+            case 'A11':
+                synth.triggerAttackRelease(["A4", "C#5", "E5", "G5", "B5", "D6"],  );
+                break;
+            case 'A#11':
+                synth.triggerAttackRelease(["A#4", "D5", "F5", "G#5", "C6", "D#6"],  );
+                break;
+            case 'B11':
+                synth.triggerAttackRelease(["B4", "D#5", "F#5", "A5", "C#6", "E6"],  );
+                break;
+
+             //13-CHORDS
+
+             case 'C13':
+                synth.triggerAttackRelease(["C4", "E4", "G4", "A#4", "D5", "F5", "A5"],  );
+                break;
+            case 'C#13':
+                synth.triggerAttackRelease(["C#4", "F4", "G#4", "B4", "D#5", "F#5", "A#5"],  );
+                break;
+            case 'D13':
+                synth.triggerAttackRelease(["D4", "F#4", "A4", "C5", "E5", "G5", "B5"],  );
+                break;
+            case 'D#13':
+                synth.triggerAttackRelease(["D#4", "G4", "A#4", "C#5", "F5", "G#5", "C6"],  );
+                break;
+
+            case 'E13':
+                synth.triggerAttackRelease(["E4", "G#4", "B4", "D5", "F#5", "A5", "C#6"],  );
+                break;
+            case 'F13':
+                synth.triggerAttackRelease(["F4", "A4", "C5", "D#5", "G5", "A#5", "D6"],  );
+                break;
+            case 'F#13':
+                synth.triggerAttackRelease(["F#4", "A#4", "C#5", "E5", "G#5", "B5", "D#6"],  );
+                break;
+            case 'G13':
+                synth.triggerAttackRelease(["G4", "B4", "D5", "F5", "A5", "C6", "E6"],  );
+                break;
+
+            case 'G#13':
+                synth.triggerAttackRelease(["G#4", "C5", "D#5", "F#5", "A#5", "C#6", "F6"],  );
+                break;
+            case 'A13':
+                synth.triggerAttackRelease(["A4", "C#5", "E5", "G5", "B5", "D6", "F#6"],  );
+                break;
+            case 'A#13':
+                synth.triggerAttackRelease(["A#4", "D5", "F5", "G#5", "C6", "D#6", "G6"],  );
+                break;
+            case 'B13':
+                synth.triggerAttackRelease(["B4", "D#5", "F#5", "A5", "C#6", "E6", "G#6"],  );
+                break;
+
+
+
+        
+        
+
+
+
+
+            
+        }
+
+        // Update the current chord
+        currentChord = chord;
+    }
+} 
+
+//C-SHARP
+
+function Csharp() {
+    var x = document.getElementById("Csharp");
+    if (x.innerHTML === "C#") {
+        x.innerHTML = "Db";
+    } else {
+        x.innerHTML = "C#"
+    }
+}
+
+function Csharpsus2() {
+    var x = document.getElementById("Csharpsus2");
+    if (x.innerHTML === "C#sus2") {
+        x.innerHTML = "Dbsus2"
+    } else {
+        x.innerHTML = "C#sus2"
+    }
+}
+
+function Csharpsus4() {
+    var x = document.getElementById("Csharpsus4");
+    if (x.innerHTML === "C#sus4") {
+        x.innerHTML = "Dbsus4"
+    } else {
+        x.innerHTML = "C#sus4"
+    }
+}
+
+function Csharpminor() {
+    var x = document.getElementById("Csharpminor");
+    if (x.innerHTML === "C#m") {
+        x.innerHTML = "Dbm";
+    } else {
+        x.innerHTML = "C#m"
+    }
+}
+
+function Csharpmajor7() {
+    var x = document.getElementById("Csharpmajor7");
+    if (x.innerHTML === "C#M7") {
+        x.innerHTML = "DbM7";
+    } else {
+        x.innerHTML = "C#M7"
+    }
+}
+
+function Csharpminor7() {
+    var x = document.getElementById("Csharpminor7");
+    if (x.innerHTML === "C#m7") {
+        x.innerHTML = "Dbm7";
+    } else {
+        x.innerHTML = "C#m7"
+    }
+}
+
+function Csharp7() {
+    var x = document.getElementById("Csharp7");
+    if (x.innerHTML === "C#7") {
+        x.innerHTML = "Db7";
+    } else {
+        x.innerHTML = "C#7"
+    }
+}
+
+
+function Csharpaug() {
+    var x = document.getElementById("Csharpaug");
+    if (x.innerHTML === "C#+") {
+        x.innerHTML = "Db+";
+    } else {
+        x.innerHTML = "C#+"
+    }
+}
+
+function Csharpdim() {
+    var x = document.getElementById("Csharpdim");
+    if (x.innerHTML === "C#°") {
+        x.innerHTML = "Db°";
+    } else {
+        x.innerHTML = "C#°"
+    }
+}
+
+function Csharpminor6() {
+    var x = document.getElementById("Csharpminor6");
+    if (x.innerHTML === "C#m6") {
+        x.innerHTML = "Dbm6";
+    } else {
+        x.innerHTML = "C#m6"
+    }
+}
+
+function Csharpmajor6() {
+    var x = document.getElementById("Csharpmajor6");
+    if (x.innerHTML === "C#M6") {
+        x.innerHTML = "DbM6";
+    } else {
+        x.innerHTML = "C#M6"
+    }
+}
+
+function Csharp9() {
+    var x = document.getElementById("Csharp9");
+    if (x.innerHTML === "C#9") {
+        x.innerHTML = "Db9";
+    } else {
+        x.innerHTML = "C#9"
+    }
+}
+
+function Csharp11() {
+    var x = document.getElementById("Csharp11");
+    if (x.innerHTML === "C#11") {
+        x.innerHTML = "Db11";
+    } else {
+        x.innerHTML = "C#11"
+    }
+}
+
+function Csharp13() {
+    var x = document.getElementById("Csharp13");
+    if (x.innerHTML === "C#13") {
+        x.innerHTML = "Db13";
+    } else {
+        x.innerHTML = "C#13"
+    }
+}
+
+//D-SHARP
+
+function Dsharp() {
+    var x = document.getElementById("Dsharp");
+    if (x.innerHTML === "D#") {
+        x.innerHTML = "Eb";
+    } else {
+        x.innerHTML = "D#"
+    }
+}
+
+function Dsharpsus2() {
+    var x = document.getElementById("Dsharpsus2");
+    if (x.innerHTML === "D#sus2") {
+        x.innerHTML = "Ebsus2"
+    } else {
+        x.innerHTML = "D#sus2"
+    }
+}
+
+function Dsharpsus4() {
+    var x = document.getElementById("Dsharpsus4");
+    if (x.innerHTML === "D#sus4") {
+        x.innerHTML = "Ebsus4"
+    } else {
+        x.innerHTML = "D#sus4"
+    }
+}
+
+function Dsharpminor() {
+    var x = document.getElementById("Dsharpminor");
+    if (x.innerHTML === "D#m") {
+        x.innerHTML = "Ebm";
+    } else {
+        x.innerHTML = "D#m"
+    }
+}
+
+function Dsharpmajor7() {
+    var x = document.getElementById("Dsharpmajor7");
+    if (x.innerHTML === "D#M7") {
+        x.innerHTML = "EbM7";
+    } else {
+        x.innerHTML = "D#M7"
+    }
+}
+
+function Dsharpminor7() {
+    var x = document.getElementById("Dsharpminor7");
+    if (x.innerHTML === "D#m7") {
+        x.innerHTML = "Ebm7";
+    } else {
+        x.innerHTML = "D#m7"
+    }
+}
+
+function Dsharp7() {
+    var x = document.getElementById("Dsharp7");
+    if (x.innerHTML === "D#7") {
+        x.innerHTML = "Eb7";
+    } else {
+        x.innerHTML = "D#7"
+    }
+}
+
+
+function Dsharpaug() {
+    var x = document.getElementById("Dsharpaug");
+    if (x.innerHTML === "D#+") {
+        x.innerHTML = "Eb+";
+    } else {
+        x.innerHTML = "D#+"
+    }
+}
+
+function Dsharpdim() {
+    var x = document.getElementById("Dsharpdim");
+    if (x.innerHTML === "D#°") {
+        x.innerHTML = "Eb°";
+    } else {
+        x.innerHTML = "D#°"
+    }
+}
+
+function Dsharpminor6() {
+    var x = document.getElementById("Dsharpminor6");
+    if (x.innerHTML === "D#m6") {
+        x.innerHTML = "Ebm6";
+    } else {
+        x.innerHTML = "D#m6"
+    }
+}
+
+function Dsharpmajor6() {
+    var x = document.getElementById("Dsharpmajor6");
+    if (x.innerHTML === "D#M6") {
+        x.innerHTML = "EbM6";
+    } else {
+        x.innerHTML = "D#M6"
+    }
+}
+
+function Dsharp9() {
+    var x = document.getElementById("Dsharp9");
+    if (x.innerHTML === "D#9") {
+        x.innerHTML = "Eb9";
+    } else {
+        x.innerHTML = "D#9"
+    }
+}
+
+function Dsharp11() {
+    var x = document.getElementById("Dsharp11");
+    if (x.innerHTML === "D#11") {
+        x.innerHTML = "Eb11";
+    } else {
+        x.innerHTML = "D#11"
+    }
+}
+
+function Dsharp13() {
+    var x = document.getElementById("Dsharp13");
+    if (x.innerHTML === "D#13") {
+        x.innerHTML = "Eb13";
+    } else {
+        x.innerHTML = "D#13"
+    }
+}
+
+//F-SHARP
+
+function Fsharp() {
+    var x = document.getElementById("Fsharp");
+    if (x.innerHTML === "F#") {
+        x.innerHTML = "Gb";
+    } else {
+        x.innerHTML = "F#"
+    }
+}
+
+function Fsharpsus2() {
+    var x = document.getElementById("Fsharpsus2");
+    if (x.innerHTML === "F#sus2") {
+        x.innerHTML = "Gbsus2"
+    } else {
+        x.innerHTML = "F#sus2"
+    }
+}
+
+function Fsharpsus4() {
+    var x = document.getElementById("Fsharpsus4");
+    if (x.innerHTML === "F#sus4") {
+        x.innerHTML = "Gbsus4"
+    } else {
+        x.innerHTML = "F#sus4"
+    }
+}
+
+function Fsharpminor() {
+    var x = document.getElementById("Fsharpminor");
+    if (x.innerHTML === "F#m") {
+        x.innerHTML = "Gbm";
+    } else {
+        x.innerHTML = "F#m"
+    }
+}
+
+function Fsharpmajor7() {
+    var x = document.getElementById("Fsharpmajor7");
+    if (x.innerHTML === "F#M7") {
+        x.innerHTML = "GbM7";
+    } else {
+        x.innerHTML = "F#M7"
+    }
+}
+
+function Fsharpminor7() {
+    var x = document.getElementById("Fsharpminor7");
+    if (x.innerHTML === "F#m7") {
+        x.innerHTML = "Gbm7";
+    } else {
+        x.innerHTML = "F#m7"
+    }
+}
+
+function Fsharp7() {
+    var x = document.getElementById("Fsharp7");
+    if (x.innerHTML === "F#7") {
+        x.innerHTML = "Gb7";
+    } else {
+        x.innerHTML = "F#7"
+    }
+}
+
+
+function Fsharpaug() {
+    var x = document.getElementById("Fsharpaug");
+    if (x.innerHTML === "F#+") {
+        x.innerHTML = "Gb+";
+    } else {
+        x.innerHTML = "F#+"
+    }
+}
+
+function Fsharpdim() {
+    var x = document.getElementById("Fsharpdim");
+    if (x.innerHTML === "F#°") {
+        x.innerHTML = "Gb°";
+    } else {
+        x.innerHTML = "F#°"
+    }
+}
+
+function Fsharpminor6() {
+    var x = document.getElementById("Fsharpminor6");
+    if (x.innerHTML === "F#m6") {
+        x.innerHTML = "Gbm6";
+    } else {
+        x.innerHTML = "F#m6"
+    }
+}
+
+function Fsharpmajor6() {
+    var x = document.getElementById("Fsharpmajor6");
+    if (x.innerHTML === "F#M6") {
+        x.innerHTML = "GbM6";
+    } else {
+        x.innerHTML = "F#M6"
+    }
+}
+
+function Fsharp9() {
+    var x = document.getElementById("Fsharp9");
+    if (x.innerHTML === "F#9") {
+        x.innerHTML = "Gb9";
+    } else {
+        x.innerHTML = "F#9"
+    }
+}
+
+function Fsharp11() {
+    var x = document.getElementById("Fsharp11");
+    if (x.innerHTML === "F#11") {
+        x.innerHTML = "Gb11";
+    } else {
+        x.innerHTML = "F#11"
+    }
+}
+
+function Fsharp13() {
+    var x = document.getElementById("Fsharp13");
+    if (x.innerHTML === "F#13") {
+        x.innerHTML = "Gb13";
+    } else {
+        x.innerHTML = "F#13"
+    }
+}
+
+//G-SHARP
+
+function Gsharp() {
+    var x = document.getElementById("Gsharp");
+    if (x.innerHTML === "G#") {
+        x.innerHTML = "Ab";
+    } else {
+        x.innerHTML = "G#"
+    }
+}
+
+function Gsharpsus2() {
+    var x = document.getElementById("Gsharpsus2");
+    if (x.innerHTML === "G#sus2") {
+        x.innerHTML = "Absus2"
+    } else {
+        x.innerHTML = "G#sus2"
+    }
+}
+
+function Gsharpsus4() {
+    var x = document.getElementById("Gsharpsus4");
+    if (x.innerHTML === "G#sus4") {
+        x.innerHTML = "Absus4"
+    } else {
+        x.innerHTML = "G#sus4"
+    }
+}
+
+function Gsharpminor() {
+    var x = document.getElementById("Gsharpminor");
+    if (x.innerHTML === "G#m") {
+        x.innerHTML = "Abm";
+    } else {
+        x.innerHTML = "G#m"
+    }
+}
+
+function Gsharpmajor7() {
+    var x = document.getElementById("Gsharpmajor7");
+    if (x.innerHTML === "G#M7") {
+        x.innerHTML = "AbM7";
+    } else {
+        x.innerHTML = "G#M7"
+    }
+}
+
+function Gsharpminor7() {
+    var x = document.getElementById("Gsharpminor7");
+    if (x.innerHTML === "G#m7") {
+        x.innerHTML = "Abm7";
+    } else {
+        x.innerHTML = "G#m7"
+    }
+}
+
+function Gsharp7() {
+    var x = document.getElementById("Gsharp7");
+    if (x.innerHTML === "G#7") {
+        x.innerHTML = "Ab7";
+    } else {
+        x.innerHTML = "G#7"
+    }
+}
+
+
+function Gsharpaug() {
+    var x = document.getElementById("Gsharpaug");
+    if (x.innerHTML === "G#+") {
+        x.innerHTML = "Ab+";
+    } else {
+        x.innerHTML = "G#+"
+    }
+}
+
+function Gsharpdim() {
+    var x = document.getElementById("Gsharpdim");
+    if (x.innerHTML === "G#°") {
+        x.innerHTML = "Ab°";
+    } else {
+        x.innerHTML = "G#°"
+    }
+}
+
+function Gsharpminor6() {
+    var x = document.getElementById("Gsharpminor6");
+    if (x.innerHTML === "G#m6") {
+        x.innerHTML = "Abm6";
+    } else {
+        x.innerHTML = "G#m6"
+    }
+}
+
+function Gsharpmajor6() {
+    var x = document.getElementById("Gsharpmajor6");
+    if (x.innerHTML === "G#M6") {
+        x.innerHTML = "AbM6";
+    } else {
+        x.innerHTML = "G#M6"
+    }
+}
+
+function Gsharp9() {
+    var x = document.getElementById("Gsharp9");
+    if (x.innerHTML === "G#9") {
+        x.innerHTML = "Ab9";
+    } else {
+        x.innerHTML = "G#9"
+    }
+}
+
+function Gsharp11() {
+    var x = document.getElementById("Gsharp11");
+    if (x.innerHTML === "G#11") {
+        x.innerHTML = "Ab11";
+    } else {
+        x.innerHTML = "G#11"
+    }
+}
+
+function Gsharp13() {
+    var x = document.getElementById("Gsharp13");
+    if (x.innerHTML === "G#13") {
+        x.innerHTML = "Ab13";
+    } else {
+        x.innerHTML = "G#13"
+    }
+}
+
+//A-SHARP
+
+function Asharp() {
+    var x = document.getElementById("Asharp");
+    if (x.innerHTML === "A#") {
+        x.innerHTML = "Bb";
+    } else {
+        x.innerHTML = "A#"
+    }
+}
+
+function Asharpsus2() {
+    var x = document.getElementById("Asharpsus2");
+    if (x.innerHTML === "A#sus2") {
+        x.innerHTML = "Bbsus2"
+    } else {
+        x.innerHTML = "A#sus2"
+    }
+}
+
+function Asharpsus4() {
+    var x = document.getElementById("Asharpsus4");
+    if (x.innerHTML === "A#sus4") {
+        x.innerHTML = "Bbsus4"
+    } else {
+        x.innerHTML = "A#sus4"
+    }
+}
+
+function Asharpminor() {
+    var x = document.getElementById("Gsharpminor");
+    if (x.innerHTML === "A#m") {
+        x.innerHTML = "Bbm";
+    } else {
+        x.innerHTML = "A#m"
+    }
+}
+
+function Asharpmajor7() {
+    var x = document.getElementById("Asharpmajor7");
+    if (x.innerHTML === "A#M7") {
+        x.innerHTML = "BbM7";
+    } else {
+        x.innerHTML = "A#M7"
+    }
+}
+
+function Asharpminor7() {
+    var x = document.getElementById("Asharpminor7");
+    if (x.innerHTML === "A#m7") {
+        x.innerHTML = "Bbm7";
+    } else {
+        x.innerHTML = "A#m7"
+    }
+}
+
+function Asharp7() {
+    var x = document.getElementById("Asharp7");
+    if (x.innerHTML === "A#7") {
+        x.innerHTML = "Bb7";
+    } else {
+        x.innerHTML = "A#7"
+    }
+}
+
+
+function Asharpaug() {
+    var x = document.getElementById("Asharpaug");
+    if (x.innerHTML === "A#+") {
+        x.innerHTML = "Bb+";
+    } else {
+        x.innerHTML = "A#+"
+    }
+}
+
+function Asharpdim() {
+    var x = document.getElementById("Asharpdim");
+    if (x.innerHTML === "A#°") {
+        x.innerHTML = "Bb°";
+    } else {
+        x.innerHTML = "A#°"
+    }
+}
+
+function Asharpminor6() {
+    var x = document.getElementById("Asharpminor6");
+    if (x.innerHTML === "A#m6") {
+        x.innerHTML = "Bbm6";
+    } else {
+        x.innerHTML = "A#m6"
+    }
+}
+
+function Asharpmajor6() {
+    var x = document.getElementById("Asharpmajor6");
+    if (x.innerHTML === "A#M6") {
+        x.innerHTML = "BbM6";
+    } else {
+        x.innerHTML = "A#M6"
+    }
+}
+
+function Asharp9() {
+    var x = document.getElementById("Asharp9");
+    if (x.innerHTML === "A#9") {
+        x.innerHTML = "Bb9";
+    } else {
+        x.innerHTML = "A#9"
+    }
+}
+
+function Asharp11() {
+    var x = document.getElementById("Asharp11");
+    if (x.innerHTML === "A#11") {
+        x.innerHTML = "Bb11";
+    } else {
+        x.innerHTML = "A#11"
+    }
+}
+
+function Asharp13() {
+    var x = document.getElementById("Asharp13");
+    if (x.innerHTML === "A#13") {
+        x.innerHTML = "Bb13";
+    } else {
+        x.innerHTML = "A#13"
+    }
+}
+
+
+
+var toggle = document.getElementById("toggleButton");
+
+toggle.addEventListener("click", Csharp);
+toggle.addEventListener("click", Csharpsus2);
+toggle.addEventListener("click", Csharpsus4);
+toggle.addEventListener("click", Csharpminor);
+toggle.addEventListener("click", Csharpmajor7);
+toggle.addEventListener("click", Csharpminor7);
+toggle.addEventListener("click", Csharp7);
+toggle.addEventListener("click", Csharpaug);
+toggle.addEventListener("click", Csharpdim);
+toggle.addEventListener("click", Csharpminor6);
+toggle.addEventListener("click", Csharpmajor6);
+toggle.addEventListener("click", Csharp9);
+toggle.addEventListener("click", Csharp11);
+toggle.addEventListener("click", Csharp13);
+
+toggle.addEventListener("click", Dsharp);
+toggle.addEventListener("click", Dsharpsus2);
+toggle.addEventListener("click", Dsharpsus4);
+toggle.addEventListener("click", Dsharpminor);
+toggle.addEventListener("click", Dsharpmajor7);
+toggle.addEventListener("click", Dsharpminor7);
+toggle.addEventListener("click", Dsharp7);
+toggle.addEventListener("click", Dsharpaug);
+toggle.addEventListener("click", Dsharpdim);
+toggle.addEventListener("click", Dsharpminor6);
+toggle.addEventListener("click", Dsharpmajor6);
+toggle.addEventListener("click", Dsharp9);
+toggle.addEventListener("click", Dsharp11);
+toggle.addEventListener("click", Dsharp13);
+
+toggle.addEventListener("click", Fsharp);
+toggle.addEventListener("click", Fsharpsus2);
+toggle.addEventListener("click", Fsharpsus4);
+toggle.addEventListener("click", Fsharpminor);
+toggle.addEventListener("click", Fsharpmajor7);
+toggle.addEventListener("click", Fsharpminor7);
+toggle.addEventListener("click", Fsharp7);
+toggle.addEventListener("click", Fsharpaug);
+toggle.addEventListener("click", Fsharpdim);
+toggle.addEventListener("click", Fsharpminor6);
+toggle.addEventListener("click", Fsharpmajor6);
+toggle.addEventListener("click", Fsharp9);
+toggle.addEventListener("click", Fsharp11);
+toggle.addEventListener("click", Fsharp13);
+
+toggle.addEventListener("click", Gsharp);
+toggle.addEventListener("click", Gsharpsus2);
+toggle.addEventListener("click", Gsharpsus4);
+toggle.addEventListener("click", Gsharpminor);
+toggle.addEventListener("click", Gsharpmajor7);
+toggle.addEventListener("click", Gsharpminor7);
+toggle.addEventListener("click", Gsharp7);
+toggle.addEventListener("click", Gsharpaug);
+toggle.addEventListener("click", Gsharpdim);
+toggle.addEventListener("click", Gsharpminor6);
+toggle.addEventListener("click", Gsharpmajor6);
+toggle.addEventListener("click", Gsharp9);
+toggle.addEventListener("click", Gsharp11);
+toggle.addEventListener("click", Gsharp13);
+
+toggle.addEventListener("click", Asharp);
+toggle.addEventListener("click", Asharpsus2);
+toggle.addEventListener("click", Asharpsus4);
+toggle.addEventListener("click", Asharpminor);
+toggle.addEventListener("click", Asharpmajor7);
+toggle.addEventListener("click", Asharpminor7);
+toggle.addEventListener("click", Asharp7);
+toggle.addEventListener("click", Asharpaug);
+toggle.addEventListener("click", Asharpdim);
+toggle.addEventListener("click", Asharpminor6);
+toggle.addEventListener("click", Asharpmajor6);
+toggle.addEventListener("click", Asharp9);
+toggle.addEventListener("click", Asharp11);
+toggle.addEventListener("click", Asharp13);
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

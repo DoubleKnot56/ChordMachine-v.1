@@ -1,0 +1,188 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  *,
+  *::before,
+  *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  body{
+    align-items: center;
+    background: #0C0B09
+    
+  }
+  
+  .button-row{
+    display: flex;
+    padding: 6px;
+    gap: 6px;
+    
+    
+  }
+  
+  .chord-button{
+    padding: 22px 10px;
+    align-items: center;
+    background-color: grey;
+    width: 65px;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid black;
+    color: white;
+  
+  }
+  
+  .chord-button:hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(1){
+    background-color: #F07201;
+  }
+
+  .chord-button:nth-child(2){
+    background-color: #F07201;
+  }
+
+  .chord-button:nth-child(3){
+    background-color: #DB4C10;
+  }
+
+  .chord-button:nth-child(4){
+    background-color: #DB4C10;
+  }
+
+  .chord-button:nth-child(5){
+    background-color: #DFC416;
+  }
+
+  .chord-button:nth-child(6){
+    background-color: #DFC416;
+  }
+
+  .chord-button:nth-child(7){
+    background-color: #C12E41;
+  }
+
+  .chord-button:nth-child(8){
+    background-color: #C12E41;
+  }
+
+  .chord-button:nth-child(9){
+    background-color: #558FC0;
+  }
+
+  .chord-button:nth-child(10){
+    background-color: #558FC0;
+  }
+
+  .chord-button:nth-child(11){
+    background-color: #42A79D;
+  }
+
+  .chord-button:nth-child(12){
+    background-color: #42A79D;
+  }
+
+  .chord-button:nth-child(13){
+    background-color: #A2DA4D;
+  }
+
+  .chord-button:nth-child(14){
+    background-color: #A2DA4D;
+  }
+
+  
+  
+  .chord-button:nth-child(1):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(2):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(3):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(4):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(5):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(6):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(7):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(8):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(9):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(10):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(11):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(12):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(13):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(14):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(15):hover{
+    background-color: #343F3E;
+  }
+
+  .chord-button:nth-child(16):hover{
+    background-color: #343F3E;
+  }
+
+  .configure-buttons{
+    display: flex;
+    padding: 6px;
+    gap: 6px;
+  }
+
+  .toggl-acc{
+    padding:  10px;
+    align-items: center;
+    background-color: grey;
+    width: 50 px;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid black;
+    color: white;
+  }
+
+  .toggl-acc:hover{
+    background-color: #343F3E;
+  }
